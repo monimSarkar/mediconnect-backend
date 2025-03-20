@@ -27,6 +27,12 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+process.on('SIGTERM', () => {
+    console.log("❌ Server is shutting down due to SIGTERM...");
+    process.exit(0);
+  });
+  
+
 //Helmet (Security Middleware for Express.js)
 const helmet = require('helmet');
 app.use(helmet());
