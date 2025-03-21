@@ -4,9 +4,7 @@
     "description": "MediConnect Backend Server",
     "main": "server.js",
     "scripts": {
-  "start": "NODE_ENV=production node server.js",
-  "preinstall": "rm -rf node_modules package-lock.json",
-  "build": "npm install"
+  "start": "NODE_ENV=production node server.js"
 },
     "dependencies": {
         "bcryptjs": "^2.4.3",
