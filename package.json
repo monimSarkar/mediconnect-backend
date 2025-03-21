@@ -4,10 +4,10 @@
     "description": "MediConnect Backend Server",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
-        "prestart": "npm install",
-        "dev": "nodemon server.js"
-    },
+  "start": "NODE_ENV=production node --trace-warnings --max-old-space-size=256 server.js",
+  "preinstall": "rm -rf node_modules package-lock.json",
+  "postinstall": "npm install --omit=dev"
+},
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "cors": "^2.8.5",
