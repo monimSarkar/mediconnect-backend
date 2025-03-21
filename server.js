@@ -31,6 +31,10 @@ process.on('SIGTERM', () => {
     console.log("❌ Server is shutting down due to SIGTERM...");
     process.exit(0);
   });
+  // Prevent Railway from stopping the server
+setInterval(() => {
+    console.log("⏳ Keeping server alive...");
+  }, 60000); // Every 60 seconds
   
 
 //Helmet (Security Middleware for Express.js)
