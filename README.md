@@ -1,2 +1,2 @@
 # MediConnect Backend
-Project Description and Setup Instructions
+Project Description and Set up Instructions
